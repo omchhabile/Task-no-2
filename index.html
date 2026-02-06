@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 - Web Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR (Flexbox) -->
+    <nav class="navbar">
+        <h2>My Project</h2>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Tasks</li>
+        </ul>
+    </nav>
+
+    <!-- GRID LAYOUT -->
+    <div class="container">
+
+        <!-- CONTACT FORM -->
+        <div class="box">
+            <h3>Contact Form</h3>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <button type="submit">Submit</button>
+                <p id="formMsg"></p>
+            </form>
+        </div>
+
+        <!-- TO-DO LIST -->
+        <div class="box">
+            <h3>To-Do List</h3>
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
